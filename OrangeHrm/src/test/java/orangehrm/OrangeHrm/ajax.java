@@ -11,7 +11,7 @@ public class ajax {
 	public static void sys() {
 		System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriver_win32 (3)\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://github.com/kg1205/april1/tree/main/OrangeHrm/src/test/java/orangehrm/OrangeHrm");
+		driver.get("https://github.com/kg1205/april1");
 		driver.manage().window().maximize();
 		driver.findElement(By.name("q")).sendKeys("selenium");
 		
