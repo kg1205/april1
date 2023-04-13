@@ -19,7 +19,7 @@ public class For {
 		System.setProperty("webdriver.chrome.driver",
 				"D:\\library\\chromedriver_win32\\chromedriver_win32 (3)\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://www.seleniumbymahesh.com/HMS/");
+		driver.get("http://www.seleniumbymahesh.com/");
 		driver.manage().window().maximize();
 
 		driver.findElement(By.name("username")).sendKeys("admin");
