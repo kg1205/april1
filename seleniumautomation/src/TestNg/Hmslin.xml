@@ -1,0 +1,16 @@
+<suite name="batch execution">
+<test name="ajax results">
+<classes>
+<class name="TestNg.ajaxcontrolhandling">
+</class>
+<methods>
+<include name="f">
+</include>
+</methods>
+</classes>
+</test>
+</suite>
+
+
+
+
