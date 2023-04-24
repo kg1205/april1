@@ -5,16 +5,23 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
+@Listeners(listeners.class)
 public class Testngmain {
 
 	WebDriver driver;
+	
+	Logger logger=Logger.getLogger("Testngmain");
 
 	@BeforeTest
 	public void beforeTest() {
@@ -41,11 +48,14 @@ public class Testngmain {
 		h.loginpass("admin");
 		h.click();
 	}
+
 	@Test(priority = 3)
 	public void registerpage() {
-		Registerhms r=new Registerhms(driver);
+		logger.debug("gett");
+		Registerhms r = new Registerhms(driver);
 		r.registerclick();
 		r.selct1();
+		logger.info("hsdkzjx");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		r.selct2();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -89,6 +99,20 @@ public class Testngmain {
 		String s = driver.switchTo().alert().getText();
 		System.out.println(s);
 		driver.switchTo().alert().accept();
+		
+	}
+
+	/*
+	 * public void onTestSuccess(ITestResult registerpage) {
+	 * System.out.println("priority was succesed" + registerpage.getName()); }
+	 */
+
+	@Test(enabled = false)
+	public void validation() {
+		String actual = "Mahesh Hospital Management System ";
+		String exp = driver.findElement(By.linkText("Mahesh Hospital Management System ")).getText();
+		Assert.assertEquals(actual, exp);
+		Logger.getLogger("passed");
 	}
 
 	@AfterTest
