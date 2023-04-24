@@ -41,6 +41,55 @@ public class Testngmain {
 		h.loginpass("admin");
 		h.click();
 	}
+	@Test(priority = 3)
+	public void registerpage() {
+		Registerhms r=new Registerhms(driver);
+		r.registerclick();
+		r.selct1();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct2();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct3();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct4();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct5();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct6();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct7();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct8();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct9();
+		r.selct005();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct10();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct11();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct12();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct13();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct14();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.firstname("ganesh");
+		r.lastname("gani");
+		r.aadharcard("213216541");
+		r.dateob("12-05-1998");
+		r.age("25");
+		r.address("sr nagar");
+		r.phone("8555555114");
+		r.pincode("502222");
+		r.image();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		r.selct15();
+		r.submit();
+		String s = driver.switchTo().alert().getText();
+		System.out.println(s);
+		driver.switchTo().alert().accept();
+	}
 
 	@AfterTest
 	public void afterTest() {
