@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class P2 {
 
 	WebDriver driver;
+	
 
 	public P2(WebDriver d) {
 		driver = d;

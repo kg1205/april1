@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 import java.util.ArrayList;
 import java.util.Iterator;

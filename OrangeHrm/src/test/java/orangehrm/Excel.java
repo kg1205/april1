@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 public class Excel {
 

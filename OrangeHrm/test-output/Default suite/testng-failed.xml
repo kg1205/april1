@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="orangehrm.OrangeHrm.listener">
+      <class name="orangehrm.list">
         <methods>
-          <include name="test1"/>
-          <include name="beforeClass"/>
+          <include name="close"/>
+          <include name="launch"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- orangehrm.OrangeHrm.listener -->
+      </class> <!-- orangehrm.list -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

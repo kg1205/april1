@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ public class ajax {
 	public static WebDriver driver;
 	
 	public static void sys() {
-		System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriver_win32 (3)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir"));
 		driver = new ChromeDriver();
 		driver.get("https://github.com/kg1205/april1");
 		driver.manage().window().maximize();

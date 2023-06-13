@@ -11,7 +11,7 @@ public class Lumamain {
 	public static WebDriver driver;
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriver_win32 (3)\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
 		driver.manage().window().maximize();

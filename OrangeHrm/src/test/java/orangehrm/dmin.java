@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;

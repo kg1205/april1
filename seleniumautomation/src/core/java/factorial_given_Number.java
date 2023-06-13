@@ -1,4 +1,4 @@
-package core.java;
+ package core.java;
 
 import java.util.Scanner;
 
@@ -9,11 +9,10 @@ public class factorial_given_Number {
 		System.out.println("enter the number");
 		int n=sc.nextInt();
 		int fact=1;
-		while(n>=1) {
-			fact=fact*n;
-			n--;
-		}
-		System.out.println(fact);
+	for(int i=n;i>=1;i--) {
+		fact=fact*n;
+		n--;
 	}
+	System.out.println(fact);
 
-}
+	}}

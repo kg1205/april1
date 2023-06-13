@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

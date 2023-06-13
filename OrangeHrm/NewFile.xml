@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="OrangeHrm">
+
+	<listeners>
+		<listener class-name="OrangeHrm.src/test/java.orangehrm.Listeneee" />
+	</listeners>
+
+	<test name="lumacart test">
+		
+		<classes>
+			<class name="OrangeHrm.java.orangehrm.list" />
+		</classes>
+	</test>
+</suite>

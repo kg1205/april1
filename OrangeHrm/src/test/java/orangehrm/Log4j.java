@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -9,7 +9,7 @@ public class Log4j {
 
 	public static void main(String[] args) {
 	Logger l=Logger.getLogger("Log4j");
-	PropertyConfigurator.configure("log4j.properties");
+	//PropertyConfigurator.configure("log4j.properties");
 	
 	System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriver_win32 (3)\\chromedriver.exe");
 	l.info("property is set");

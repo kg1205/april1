@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.luma.com.lumacart.Testngmain">
+      <class name="lumafine.Tc_001">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="hms"/>
+          <include name="test"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.luma.com.lumacart.Testngmain -->
+      </class> <!-- lumafine.Tc_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

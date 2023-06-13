@@ -1,4 +1,4 @@
-package orangehrm.OrangeHrm;
+package orangehrm;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

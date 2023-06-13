@@ -19,7 +19,7 @@ public class sumOfEven_Odd_From1_10 {
 		}
 		i++;
 		System.out.println(esum);
-		System.out.println(osum);
+		//System.out.println(osum);
 	}
 	
 	}
