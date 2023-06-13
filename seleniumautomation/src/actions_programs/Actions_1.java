@@ -22,7 +22,7 @@ public class Actions_1 implements ITestListener {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriverr.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\library\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://www.seleniumbymahesh.com/");
 		driver.manage().window().maximize();
