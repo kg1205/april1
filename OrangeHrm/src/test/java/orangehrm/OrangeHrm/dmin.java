@@ -18,7 +18,7 @@ public class dmin {
 
 	
 	
-	public void admin() {
+	public void bdmin() {
 		driver.findElement(adminf).click();
 		l.debug("admin sendkeys has done");
 	}
